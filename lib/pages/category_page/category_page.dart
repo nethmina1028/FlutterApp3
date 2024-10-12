@@ -45,15 +45,34 @@ class CategoryPage extends StatelessWidget {
              Row(
               children: [
                 Column(
-                  children: [
-                    CategoryCard(),
-                  ],
+                   children: [
+                        CategoryCard(
+                          mainTitle: "Bites & \nDrinks",
+                          description: "20+ more ...",
+                          mainColor: Color(0xff00FF29),
+                          categoryColor: Color(0xff06FFA5),
+                        ),
+                        CategoryCard(
+                          mainTitle: "Chicken & \nBeef",
+                          description: "20+ more ...",
+                          mainColor: Color(0xffFFB800),
+                          categoryColor: Color(0xffFF9900),
+                        ),
+                        CategoryCard(
+                          mainTitle: "Transport & \nVehicals",
+                          description: "20+ more ...",
+                          mainColor: Color(0xffCC00FF),
+                          categoryColor: Color(0xffDB00FF),
+                        ),
+                      ],
                 )
               ],
              )
 
           ],
           ),
+
+          
         ),
       ),
     );
